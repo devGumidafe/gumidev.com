@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario contacto Gumidafe Socorro</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+
+  <body>
+    <section class="contact">
+      <figure class="contact__picture">
+        <img
+          src="images/ilustration.svg"
+          class="contact__img"
+          alt="Imagen contacto"
+        />
+      </figure>
+
+      <form id="form" class="contact__form">
+        <h2 class="contact__title">Contáctame</h2>
+        <input
+          type="text"
+          class="contact__input"
+          name="name"
+          id="name"
+          placeholder="Introduce tú nombre"
+          required
+          minlength="2"
+          maxlength="40"
+        />
+        <span id="name-error"></span>
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="contact__input"
+          placeholder="Introduce tú email"
+          required
+        />
+        <span id="email-error"></span>
+
+        <textarea
+          class="contact__input contact__input--area"
+          name="message"
+          id="message"
+          placeholder="Mensaje..."
+          required
+          minlength="10"
+          maxlength="500"
+        ></textarea>
+        <span id="message-error"></span>
+
+        <div class="contact__buttons">
+          <a class="contact__button contact__button-return" href="index.html"
+            >Volver</a
+          >
+          <button type="submit" class="contact__button contact__button-submit" name="submit">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </section>
+    <script src="./js/form.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
