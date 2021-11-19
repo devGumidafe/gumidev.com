@@ -24,20 +24,3 @@ menuLinks.forEach((el) => {
     sectionToGo.scrollIntoView({ behavior: "smooth" });
   });
 });
-
-const getAge = (dateString) => {
-  let today = new Date();
-  let birthDate = new Date(dateString);
-  let age = today.getFullYear() - birthDate.getFullYear();
-  let differenceMonths = today.getMonth() - birthDate.getMonth();
-  if (
-    differenceMonths < 0 ||
-    (differenceMonths === 0 && today.getDate() < birthDate.getDate())
-  ) {
-    age--;
-  }
-  return age;
-};
-
-const age = document.getElementById("age");
-age.innerHTML = getAge("1983/08/07");
