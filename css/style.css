@@ -131,7 +131,7 @@ body {
     align-items: center;
 }
 
-.profile-link{
+.profile-link {
     text-decoration: none;
     background: none;
     font-weight: bold;
@@ -177,7 +177,7 @@ body {
 }
 
 .title span {
-    color:var(--color-tertiary);
+    color: var(--color-tertiary);
 }
 
 .section-item {
@@ -263,7 +263,11 @@ body {
 }
 
 .section-item li {
-    margin-left: 48px;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .8rem;
 }
 
 .section-item i {
@@ -387,6 +391,7 @@ body {
         flex-wrap: wrap;
         padding: 80px 40px;
     }
+
     .menu {
         position: fixed;
         top: 12px;
@@ -397,22 +402,27 @@ body {
         overflow-y: hidden;
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
     }
+
     .menu-item {
         width: 95px;
         height: 65px;
     }
+
     .profile, .main {
         min-width: 550px;
         width: 550px;
         margin: 12px;
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
     }
+
     .profile {
         grid-template-rows: 1fr 170px 70px;
     }
+
     .main {
         max-height: unset;
     }
+
     .domains {
         justify-content: center;
     }
@@ -422,17 +432,21 @@ body {
     body {
         padding: 80px 16px;
     }
+
     .profile, .main {
         min-width: unset;
         width: 100%;
         margin: 12px;
     }
+
     .split .asset-body {
         grid-template-columns: 1fr;
     }
+
     .section-item .domain-item {
         margin-bottom: 16px;
     }
+
     .asset-body.grid {
         justify-content: center;
     }
