@@ -9,7 +9,8 @@ const expressions = {
 const errorMessages = {
   name: "El nombre tiene que contener de 2 a 40 caracteres y solo admite caracteres validos",
   email: "El email no es válido, ejemplo@email.com",
-  message:"El mensaje tiene que contener de 10 a 500 caracteres y solo admite caracteres validos",
+  message:
+    "El mensaje tiene que contener de 10 a 500 caracteres y solo admite caracteres validos",
 };
 
 const fieldList = ["name", "email", "message"];
