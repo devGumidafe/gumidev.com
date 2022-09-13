@@ -354,6 +354,19 @@ body {
     color: var(--color-primary);
 }
 
+.coding-container{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding-top: .5rem;
+}
+
+.coding-icon{
+    width: 30px !important;
+}
+
 /* More info layer */
 
 .more-overlay {
