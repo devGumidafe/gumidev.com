@@ -67,7 +67,14 @@ const sendEmail = (formData) => {
   })
     .then((res) => res.json())
     .then((res) => {
-      showAlert(res);
+      try {
+        showAlert(res);
+      } catch (e) {
+        showAlert('error');
+      }
+    })
+    .catch((e) => {
+      showAlert('error');
     });
 };
 
