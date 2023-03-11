@@ -3,14 +3,14 @@ const form = document.querySelector('#form');
 const expressions = {
   name: /^[a-zA-Z0-9À-ÿ\s]{2,40}$/, // Letras y espacios, pueden llevar acentos.
   email: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-  message: /^[a-zA-Z0-9.!#$%&'*+@/=?^_`{|}~-À-ÿ\s]{10,500}$/,
+  message: /^[a-zA-Z0-9.,!#$%&'*+@/=?^_`{|}~-À-ÿ\s;:]{5,500}$/,
 };
 
 const errorMessages = {
   name: 'El nombre tiene que contener de 2 a 40 caracteres y solo admite caracteres validos',
   email: 'El email no es válido, ejemplo@email.com',
   message:
-    'El mensaje tiene que contener de 10 a 500 caracteres y solo admite caracteres validos',
+    'El mensaje tiene que contener de 5 a 500 caracteres y solo admite caracteres validos',
 };
 
 const fieldList = ['name', 'email', 'message'];
